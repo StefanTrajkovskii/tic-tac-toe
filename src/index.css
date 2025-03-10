@@ -1,0 +1,90 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #ecf0f1;
+  background-color: #2c3e50;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #2c3e50;
+  color: #ecf0f1;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2c3e50;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3498db;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2980b9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+  
+  .square {
+    background-color: #333;
+    border-color: #666;
+    color: white;
+  }
+  
+  .square:hover {
+    background-color: #444;
+  }
+  
+  .board {
+    background-color: #2a2a2a;
+  }
+  
+  .game-history, .status {
+    background-color: #2a2a2a;
+    color: white;
+  }
+  
+  .game-history button {
+    background-color: #333;
+    border-color: #555;
+    color: white;
+  }
+  
+  .game-history button:hover {
+    background-color: #444;
+  }
+  
+  .square.winning {
+    background-color: #264d26;
+    border-color: #4d8c4d;
+  }
+}
