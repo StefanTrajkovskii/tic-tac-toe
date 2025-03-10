@@ -59,11 +59,6 @@ function Game() {
     setXIsNext(!xIsNext);
   };
   
-  const jumpTo = (step) => {
-    setStepNumber(step);
-    setXIsNext((step % 2) === 0);
-  };
-  
   const reset = () => {
     setHistory([{
       squares: Array(9).fill(null),
